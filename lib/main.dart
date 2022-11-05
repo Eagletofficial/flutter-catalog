@@ -1,24 +1,50 @@
-import 'package:flutter/material.dart';
+// import 'package:flutter/material.dart';
+// import 'package:flutter_catalog/Calculator.dart';
 
-import 'package:flutter_catalog/nested_navigation.dart';
+// import 'package:flutter_catalog/nested_navigation.dart';
+
+// void main() {
+//   runApp(const MyApp());
+// }
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   // This widget is the root of your application.
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       title: 'Flutter Demo',
+//       theme: ThemeData(
+//         primarySwatch: Colors.blue,
+//       ),
+//       home: Calculator(),
+//     );
+//   }
+// }
+
+
+import 'package:flutter/material.dart';
+import 'package:flutter_catalog/Calculator.dart';
+
+
 
 void main() {
-  runApp(const MyApp());
+  runApp(const Provider());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class Provider extends StatelessWidget {
+  const Provider({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const NestedNav(),
+      home: const Calculator(),
     );
   }
 }
